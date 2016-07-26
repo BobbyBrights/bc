@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "first!"
+date:   2016-07-25 12:15:46 +0530
+featured: photo6.jpg
+---
