@@ -585,7 +585,7 @@ display:inline-block;
 
 .post-link {
 display:block;
-color:#000;
+color:#fff;
 }
 
 .grid-item .detail h3 {
@@ -598,7 +598,7 @@ color:#000;
 	-moz-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
-	font-size:18px;
+	font-size:12px;
 	opacity:0;
 	-webkit-transition: opacity 0.5s ease;
 	-moz-transition: opacity 0.5s ease;
