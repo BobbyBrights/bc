@@ -1,6 +1,6 @@
 	<div class="page-wrapper clearfix {% if page.path contains '_posts' %} post-page {% endif %}">
 		<div class="inset">
-			<header id="header" class="left">
+			<!--<header id="header" class="left">
 				{% if page.path contains '_posts' %}
 				<div class="logo post">
 					<a href="{{site.baseurl}}/">back</a>
@@ -8,4 +8,13 @@
 				{% else %}	
 				<div class="logo home">Brooke Coffey</div>
 				{% endif %}
-			</header>
+			</header>-->
+				<div class="left-rotate">
+					<ul>
+					{% if page.path contains '_posts' %}
+						<li><a href="{{site.baseurl}}/">back</a></li>
+					{% else %}	
+						<li>Brooke Coffey</li>
+					{% endif %}	
+					</ul>
+				</div>

@@ -1,4 +1,4 @@
-		<footer id="footer">
+		<!--<footer id="footer">
 			{% if page.path contains '_posts' %}	
 			
 			<div class="footer post-detail">
@@ -14,7 +14,18 @@
 			<div class="footer random-space">Information</div>
 				
 			{% endif %}
-		</footer>		
+		</footer>-->
+<div class="right-rotate {% if page.path contains '_posts' %} right-post-inner {% endif %}">
+    <ul>
+	{% if page.path contains '_posts' %}
+        <li>{{page.title}}</li>
+        <li>INFO</li>
+        <li>SHARE</li>
+		{% else %}	
+		<li>Information</li>
+	{% endif %}		
+    </ul>
+</div>		
 		</div>  <!--inset-->
 	</div><!--page-wrapper-->
   

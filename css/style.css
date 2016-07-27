@@ -527,7 +527,7 @@ max-width:811px;
 
 /************  Main Css *************/
 
-#header {
+/* #header {
 	font-size: 12px;
 	position:fixed;
 	top:50%;
@@ -557,7 +557,7 @@ max-width:811px;
 
 #header .logo.home{
 	margin-left:-14px;
-}
+} 
 
 
 .footer {
@@ -565,6 +565,18 @@ max-width:811px;
 	-moz-transform:rotate(90deg);	
     transform: rotate(90deg);
 }
+
+
+.footer.post-detail{
+	margin-left:877px;
+}
+
+.random-space{
+	padding-left:25px;
+	margin-left:926px;
+}
+
+*/
 
 
 /**home page**/
@@ -633,10 +645,7 @@ margin-top:145px;
   margin-bottom:26px;
 }
 
-.random-space{
-	padding-left:25px;
-	margin-left:900px;
-}
+
 
 /**post detail page **/
 .function {
@@ -647,16 +656,14 @@ margin-top:145px;
 	padding-left:12px;
 } 
 
-.footer.post-detail{
-	margin-left:900px;
-}
+
 
 .flex-direction-nav{
 	display:none;
 }
 
 .logo.post {
-    margin-left: 18px;
+    margin-left: 20px;
 }
 
 .slider-function {
@@ -687,4 +694,56 @@ content:"\f054";
 
 .page-wrapper.clearfix.post-page {
     padding-bottom: 0;
+}
+
+/** left right text **/
+.left-rotate,
+.right-rotate {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 1.5em;
+    margin: auto;
+}
+
+.left-rotate {
+    -webkit-transform-origin: 0 50%;
+       -moz-transform-origin: 0 50%;
+        -ms-transform-origin: 0 50%;
+         -o-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transform: rotate(-90deg) translate(-50%, 70%);
+       -moz-transform: rotate(-90deg) translate(-50%, 70%);
+        -ms-transform: rotate(-90deg) translate(-50%, 70%);
+         -o-transform: rotate(-90deg) translate(-50%, 70%);
+            transform: rotate(-90deg) translate(-50%, 70%);
+			
+}
+
+.left-rotate li , .left-rotate a ,	.right-rotate li , .right-rotate a{
+	color:#000;
+	font-size:12px;
+}
+
+.left-rotate li , .right-rotate li{
+	display:inline-block;
+}
+
+.right-rotate {
+    -webkit-transform-origin: 0 50%;
+       -moz-transform-origin: 0 50%;
+        -ms-transform-origin: 0 50%;
+         -o-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transform: rotate(90deg) translate(-50%, 50%);
+       -moz-transform: rotate(90deg) translate(-50%, 50%);
+        -ms-transform: rotate(90deg) translate(-50%, 50%);
+         -o-transform: rotate(90deg) translate(-50%, 50%);
+            transform: rotate(90deg) translate(-50%, 50%);
+			left:1122px;
+}
+.right-rotate.right-post-inner{
+    left: 1187px;
+    text-align: center;
+    width: 500px;
 }
