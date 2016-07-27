@@ -106,6 +106,11 @@ pre {
 /* Text-level semantics
    ========================================================================== */
 
+ul{
+	padding:0;
+	margin:0;
+}   
+   
 /**
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
@@ -114,6 +119,8 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  text-decoration:none;
+  color:#000;
 }
 
 /**
@@ -493,7 +500,7 @@ template {
 	position:relative;
 }
 .middle-container{
-	max-width: 784px;
+max-width:811px;
 	margin: 0 auto;
 }
 .row{
@@ -508,7 +515,7 @@ template {
 	box-sizing: border-box;
 }
 .page-wrapper{
-	padding: 145px 0;
+	padding: 120px 0;
 	position: relative;
 }
 .right{
@@ -537,22 +544,26 @@ template {
 	-webkit-transform:translateY(-50%);
 	-moz-transform:translateY(-50%);
 	transform:translateY(-50%);
-	margin-left:900px;
 
 }
 #header .logo {
     display: block;
     padding-bottom: 25px;
     text-align: left;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
     transform: rotate(-90deg);
 }
 
-
+#header .logo.home{
+	margin-left:-14px;
+}
 
 
 .footer {
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);	
     transform: rotate(90deg);
-	 padding-bottom: 85px;
 }
 
 
@@ -575,7 +586,7 @@ template {
 
 .grid-item:nth-child(even) .detail{
 float:right;
-margin-right:56px;
+margin-right:24px;
 }
 
 .grid-item .detail{
@@ -622,4 +633,58 @@ margin-top:145px;
   margin-bottom:26px;
 }
 
+.random-space{
+	padding-left:25px;
+	margin-left:900px;
+}
 
+/**post detail page **/
+.function {
+    padding-left: 18px;
+}
+
+.function a {
+	padding-left:12px;
+} 
+
+.footer.post-detail{
+	margin-left:900px;
+}
+
+.flex-direction-nav{
+	display:none;
+}
+
+.logo.post {
+    margin-left: 18px;
+}
+
+.slider-function {
+    font-size: 10px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.slide-count {
+    margin: 0 15px;
+}
+
+.slider-function > div {
+    display: inline-block;
+
+}
+
+#sliderPrev:before{
+content:"\f054";
+  font-family: 'FontAwesome';
+  	cursor:pointer;
+}
+#sliderNext:before{
+	content:"\f053";
+	font-family: 'FontAwesome';
+  	cursor:pointer;
+}
+
+.page-wrapper.clearfix.post-page {
+    padding-bottom: 0;
+}

@@ -1,15 +1,26 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="middle-container">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+{% if page.carousel %}
+  <div class="flexslider">
+    <ul class="slides">
+      {% for slides in page.carousel %}
+      <li>
+        <div class="slide-image" style="background: url('{{site.baseurl}}/{{ slides.image }}'); background-size:cover; background-position:center center; width:100%;">
+      </li>
+      {% endfor %}
+    </ul>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
   </div>
+  <div class="slider-function">
+ 	<div id="sliderNext"></div>
+	<div class="slide-count">
+		<span>0</span><span class="current-slide">1</span>/<span>0</span><span class="total-slides"></span>
+	</div>	
+	<div id="sliderPrev"></div>
+  </div>
+  {% endif %}
 
-</article>
+</div>

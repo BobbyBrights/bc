@@ -1,9 +1,11 @@
-	<div class="page-wrapper clearfix">
+	<div class="page-wrapper clearfix {% if page.path contains '_posts' %} post-page {% endif %}">
 		<div class="inset">
 			<header id="header" class="left">
 				{% if page.path contains '_posts' %}
-				<div class="logo">back</div>
+				<div class="logo post">
+					<a href="{{site.baseurl}}/">back</a>
+				</div>
 				{% else %}	
-				<div class="logo">Brooke Coffey</div>
+				<div class="logo home">Brooke Coffey</div>
 				{% endif %}
 			</header>
