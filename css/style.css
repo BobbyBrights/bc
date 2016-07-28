@@ -762,6 +762,17 @@ content:"\f054";
 }
 
 
+#share {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    width: 100%;
+}
+
+.twitter-share-button.twitter-share-button-rendered.twitter-tweet-button{
+	vertical-align: text-bottom;
+}
+
 /** left right text **/
 .left-rotate,
 .right-rotate {
