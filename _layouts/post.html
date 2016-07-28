@@ -5,14 +5,13 @@ layout: default
 
 {% if page.carousel %}
   <div class="flexslider">
-    <ul class="slides">
-      {% for slides in page.carousel %}
-      <li>
-        <div class="slide-image" style="background: url('{{site.baseurl}}/{{ slides.image }}'); background-size:cover; background-position:center center; width:100%;">
-      </li>
-      {% endfor %}
-    </ul>
-
+		<ul class="slides">
+		  {% for slides in page.carousel %}
+		  <li>
+			<div class="slide-image" style="background: url('{{site.baseurl}}/{{ slides.image }}'); background-size:cover; background-position:center center; width:100%;"></div>
+		  </li>
+		  {% endfor %}
+		</ul>
   </div>
   <div class="slider-function">
  	<div id="sliderNext"></div>
@@ -22,5 +21,45 @@ layout: default
 	<div id="sliderPrev"></div>
   </div>
   {% endif %}
-
+  
+    <div class="pop_up_wrapper">
+	  <div class="pop_up" id="info">  
+		<div class="styling">
+			<h3>styling</h3>
+			<ul>
+				<li>{{page.styling}}</li>
+			</ul>
+		</div>
+		<div class="hair">
+			<h3>hair</h3>
+			<ul>
+				<li>{{page.hair}}</li>
+			</ul>
+		</div>
+		<div class="make-up">
+			<h3>make-up</h3>
+			<ul>
+				<li>{{page.make_up}}</li>
+			</ul>
+		</div>
+		<div class="models">
+			<h3>models</h3>
+			<ul>
+			{% if page.models %}
+			{% for model in page.models %}
+				<li>{{model.model}}</li>
+			{% endfor %}
+			{% endif %}	
+			</ul>
+		</div>
+	  </div>
+	  <div class="pop_up" id="share">share
+		<a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+	  </div>
+	</div>
+	
 </div>
+
+
+ 
