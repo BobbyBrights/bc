@@ -671,6 +671,13 @@ margin-top:145px;
     font-size: 10px;
     margin-top: 80px;
     text-align: center;
+	position:relative;
+	z-index:2;
+}
+
+.flexslider{
+	z-index:2;
+	position:relative;
 }
 
 .slide-count {
@@ -726,7 +733,7 @@ content:"\f054";
 
 .pop_up_wrapper.open{
 	opacity:1;
-	z-index:1;
+	z-index:3;
 	background:#fff;
 }
 
