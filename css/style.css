@@ -856,4 +856,43 @@ content:"\f054";
 
 body.information-page{
 	background:#010101;
+	color: #fff;
+}
+
+.information-info {
+    padding: 0 81px;
+}
+
+.information-info h3{
+	font-size:10px;
+	padding-bottom:18px;
+}
+.information-info p{
+	font-size:17px;
+	line-height:1.3;
+}
+
+.information-info .social-links a{
+	color:#fff;
+	font-size:17px;
+}
+
+.representation {
+    margin-top: 56px;
+}
+
+.representation address p{
+	font-style:normal;
+	margin:0;
+}
+.representation address {
+	display:inline-block;
+
+}
+.representation address.first-one{
+		padding-right:93px;
+}
+
+body.information-page .left-rotate li, body.information-page .left-rotate a, body.information-page .right-rotate li, body.information-page .right-rotate a {
+color: #fff;
 }
