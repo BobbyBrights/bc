@@ -109,6 +109,7 @@ pre {
 ul{
 	padding:0;
 	margin:0;
+	list-style:none;
 }   
    
 /**
@@ -776,8 +777,20 @@ content:"\f054";
     width: 100%;
 }
 
-.twitter-share-button.twitter-share-button-rendered.twitter-tweet-button{
-	vertical-align: text-bottom;
+.fb:before{
+	content:"\f082";
+	font-family:fontawesome;
+	font-size:20px;
+}
+
+.twitter:before{
+	content:"\f099";
+	font-family:fontawesome;
+	font-size:20px;
+}
+
+.twitter{
+	margin:0 17px;
 }
 
 /** left right text **/
@@ -837,4 +850,10 @@ content:"\f054";
     -ms-transform: rotate(90deg) translate(-50%, 0px);
     -o-transform: rotate(90deg) translate(-50%, 0px);
     transform: rotate(90deg) translate(-50%, 0px);	
+}
+
+/**information page**/
+
+body.information-page{
+	background:#010101;
 }
