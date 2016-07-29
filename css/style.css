@@ -814,20 +814,27 @@ content:"\f054";
 }
 
 .right-rotate {
-    -webkit-transform-origin: 0 50%;
-       -moz-transform-origin: 0 50%;
-        -ms-transform-origin: 0 50%;
-         -o-transform-origin: 0 50%;
-            transform-origin: 0 50%;
-    -webkit-transform: rotate(90deg) translate(-50%, 50%);
-       -moz-transform: rotate(90deg) translate(-50%, 50%);
-        -ms-transform: rotate(90deg) translate(-50%, 50%);
-         -o-transform: rotate(90deg) translate(-50%, 50%);
-            transform: rotate(90deg) translate(-50%, 50%);
-			left:1155px;
+    transform: rotate(90deg) translate(-33%, 0px);
+    transform-origin: 0 0 0;
+}
+.right-rotate {
+    -webkit-transform-origin: 0 0 0;
+       -moz-transform-origin:  0 0 0;
+        -ms-transform-origin:  0 0 0;
+         -o-transform-origin:  0 0 0;
+            transform-origin:  0 0 0;
+    -webkit-transform: rotate(90deg) translate(-33%, 0px);
+       -moz-transform: rotate(90deg) translate(-33%, 0px);
+        -ms-transform: rotate(90deg) translate(-33%, 0px);
+         -o-transform: rotate(90deg) translate(-33%, 0px);
+            transform: rotate(90deg) translate(-33%, 0px);
 }
 .right-rotate.right-post-inner{
-    left: 1187px;
     text-align: center;
     width: 500px;
+    -webkit-transform: rotate(90deg) translate(-50%, 0px);
+    -moz-transform: rotate(90deg) translate(-50%, 0px);
+    -ms-transform: rotate(90deg) translate(-50%, 0px);
+    -o-transform: rotate(90deg) translate(-50%, 0px);
+    transform: rotate(90deg) translate(-50%, 0px);	
 }
