@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Twitter cards metadatas -->
 	<meta name="twitter:card" content="summary">
@@ -69,16 +70,18 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
   
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="{{ '/fonts/stylesheet.css' | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.baseurl }}">
-  
+	<link rel="stylesheet" href="{{ '/css/media.css' | prepend: site.baseurl }}">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+
+	<script src="{{ '/js/imagesloaded.pkgd.min.js' | prepend: site.baseurl }}"></script>
 	<script src="{{ '/js/masonry.js' | prepend: site.baseurl }}"></script>
-  
-	{% if page.carousel %}
+	
 	<!-- Flexslider Library  -->
 	<script src="{{ '/js/jquery.flexslider.js' | prepend: site.baseurl }}"></script>
-	{% endif %}
 	
-  <script src="{{ '/js/custom.js' | prepend: site.baseurl }}"></script>
+	<script src="{{ '/js/custom.js' | prepend: site.baseurl }}"></script>
 </head>

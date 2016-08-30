@@ -1,14 +1,21 @@
 ---
 layout: default
 ---
+
+<div class="post-title-wrapper">
+	<h3 class="post-title">{{page.styling}}</h3>
+</div>
+
 <div class="middle-container">
 
 {% if page.carousel %}
+
   <div class="flexslider">
 		<ul class="slides">
 		  {% for slides in page.carousel %}
 		  <li>
 			<div class="slide-image" style="background: url('{{site.baseurl}}/{{ slides.image }}'); background-size:cover; background-position:center center; width:100%;"></div>
+			<img class="hidden" src="{{site.baseurl}}/{{ slides.image }}"/>
 		  </li>
 		  {% endfor %}
 		</ul>
