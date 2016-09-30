@@ -262,6 +262,7 @@ $(document).ajaxStart(function(){
 $( document ).ajaxComplete(function() {
    Blank.ajx_reint()
 	$('body').addClass('animation'); 
+	slider_mobile();
  
 });
 

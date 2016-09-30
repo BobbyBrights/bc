@@ -90,13 +90,31 @@ img.hidden{display:block;max-width:100%; height:auto;}
   z-index: 2;
 }*/
 
+.post-title-wrapper{
+	top:50%;
+	-webkit-transform: translateY(-50%); 
+	-moz-transform: translateY(-50%); 
+	-ms-transform: translateY(-50%); 
+	transform: translateY(-50%);
+}
+
+.post-title-wrapper h3{
+	margin:0;
+}
+
 .post-page .page-content,.information-page .page-content{align-items: center;
     display: flex;
-    justify-items: center; opacity:0;}
+    justify-items: center; opacity:1;} 
 
 .right-rotate.right-post-inner li:first-child{font-size:10px;}	
 .right-rotate.right-post-inner li[data-related = "info"],.right-rotate.right-post-inner li[data-related = "share"]{font-size:8px;}
 	
 #info h3{font-size:8px;margin-bottom:7px;}
 #info li{font-size:14px;}	
+}
+
+@media screen and (max-width:768px){
+	.loader{
+		background-size:contain;
+	}
 }

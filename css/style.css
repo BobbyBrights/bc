@@ -1029,6 +1029,7 @@ body.animation .home  .right-rotate , body.animation .home .left-rotate{
     position: absolute;
     width: 100%;
     z-index: 4;
+	left:0;
 }
 
 .post-title-wrapper h3{
