@@ -1,3 +1,10 @@
+
+@media screen and (max-width:1024px){
+	.inset{
+		 max-width: 768px;
+	}
+}
+
 @media screen and (max-width:768px){
 /*------home page-----*/
 .page-wrapper{padding:68px 0;}
